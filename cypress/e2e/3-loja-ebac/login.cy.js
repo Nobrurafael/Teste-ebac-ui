@@ -41,7 +41,7 @@ afterEach('', () => {
     cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' ,'Olá, bruno.lima (não é bruno.lima? Sair)')
  });
 
-  it.only('Deve fazer login com sucesso - usando Fixtures', () => {
+  it('Deve fazer login com sucesso - usando Fixtures', () => {
    cy.fixture('perfil').then( dados => {
        cy.get('#username').type(dados.usuario, {log: false})
        cy.get('#password').type(dados.senha , {log: false})
@@ -52,4 +52,9 @@ afterEach('', () => {
 
   });
 
+  it('Deve fazer login com sucesso - usando comandos customizados', () => {
+    cy.login('bruno.lima@teste.com.br', '81548224')
+    cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' ,'Olá, bruno.lima (não é bruno.lima? Sair)')
+
+  });
 })
