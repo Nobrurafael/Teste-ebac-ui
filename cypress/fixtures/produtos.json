@@ -1,0 +1,25 @@
+[
+   {
+       "nomeProduto": "Abominable Hoodie",
+       "tamanho": "XS",
+       "cor": "Green",
+       "quantidade": 3
+
+   },
+   {
+ 
+       "nomeProduto": "Teton Pullover Hoodie",
+       "tamanho": "M",
+       "cor": "Black",
+       "quantidade": 10
+
+   },
+   {
+ 
+       "nomeProduto": "Grayson Crewneck Sweatshirt",
+       "tamanho": "S",
+       "cor": "Red",
+       "quantidade": 5
+
+   }
+]
